@@ -10,7 +10,7 @@ To begin, I import all the neccessary tools I will need for this project as well
 The dataset contains 6,398 Spotify songs from the 2010s. Exactly half of these songs are hits and half are not.
 
 To get a general idea of what features might be related to the target, I performed a Pearson correlation. From this I found that the most positively correlated features with the target were danceability, loudness, valence, and time signature. Instrumentalness had the strongest negative correlation with the target.
-<img src="images/heatmap" alt="Correlations heatmap">
+<img src="images/heatmap.png" alt="Correlations heatmap">
     
 ## Data Preparation
 To compare later models to, first a baseline model must first be created.
@@ -31,7 +31,7 @@ The final and best-performing model is a random forests model with a testing acc
 
 The most important features for this model are instrumentalness, danceability, energy, loudness, and acousticness. These are mostly the same features that were most important to our baseline model, except acousticness is more important here.
 
-<img src="images/importances" alt="Feature importances">
+<img src="images/importances.png" alt="Feature importances">
 
     
 
@@ -40,7 +40,7 @@ Our final model is about 82.4% accurate and about 79.0% precise in correctly ide
 
 The AUC value indicates that there are more false negatives than false positives in this model's results, which is what we want. This means we are less likely to recommend a song that is not actually a hit.
 
-<img src="images/cm" alt="Confusion matrix">
+<img src="images/cm.png" alt="Confusion matrix">
 
 
 This confusion matrix shows that the model had 185 false negatives and 97 false positives.
