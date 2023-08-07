@@ -1,4 +1,5 @@
 # Spotify Hit Songs Classification
+Nicole Michaud, 8/7/2023
 ## Business Problem
 There could be a number of factors that determine whether a song will be a hit or not. If we know what these factors are, we may be able to better predict how popular a song will be and therefore improve features such as user recommendations.
 
@@ -26,6 +27,8 @@ For this business problem, we have a goal of recommending hit songs to Spotify u
 The baseline model had a testing accuracy score of about 79.8% and a testing precision score of about 78.1%. It also had an AUC value of about 0.80.
 The most important features to this baseline model were instrumentalness, energy, loudness, valence, and danceability.
 Hyperparameter tuning did not improve this model.
+
+A total of 4 models were created, including the baseline decision tree, the hyperparameter-tuned decision tree, a random forests model, and the hyperparameter-tuned random forests model (the final model).
 
 The final and best-performing model is a random forests model with a testing accuracy of about 82.4%, a testing precision of about 79.0%, and an AUC of about 0.82.
 
@@ -60,3 +63,7 @@ Songs should not be too high in instrumentalness, because it is highly correlate
 - Compare data from other decades
     - Are there any trends?
 - Investigate whether genre is an important feature when determining whether or not a song will be a hit
+
+##### Context:
+This notebook was created alongside a Jupyter notebook, a miscellaneous notebook, and a slides presentation. All of these can be found on the <a href="https://github.com/nicolemichaud03/Spotify_hit_songs_classification">GitHub repository</a> for this project.
+
